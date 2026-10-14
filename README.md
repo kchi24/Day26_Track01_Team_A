@@ -16,7 +16,6 @@
 ### Quy trình kiểm tra chéo nội dung:
 1. **Đối chiếu chứng cứ [S1–S4]**: Rà soát tính xác thực của số liệu từ các case study thực tế (Morgan Stanley, UK GDS, Klarna) với log thực nghiệm Jira/RAG nội bộ.
 2. **Thống nhất cấu trúc Event Logs**: Xây dựng technical dictionary và schema JSON trích xuất sự kiện cho từng bước trong TO-BE workflow.
-3. **Phản biện chéo 2 chiều**: Trao đổi phản biện với Nhóm Anh Em Siêu Nhân ([trantran2929/Day26_Track01_anhemsieunhan](https://github.com/trantran2929/Day26_Track01_anhemsieunhan)), tiếp thu 2 thay đổi cốt lõi lên bản v2 (chi tiết tại [evidence/bien_ban_phan_bien_cheo.md](evidence/bien_ban_phan_bien_cheo.md)).
 
 ---
 
