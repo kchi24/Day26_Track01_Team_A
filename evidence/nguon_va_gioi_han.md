@@ -86,10 +86,11 @@ Mỗi tương tác trong cohort đều được gắn schema kiểm toán chuẩ
 
 ## 4. Biên bản Xác nhận Phản biện chéo (Peer Review Log)
 
-- **Nhóm phản biện chéo đối ứng:** `Nhóm 05 — E-Commerce Customer Operations (Track 01)`.
-- **Người đại diện phản biện:** Nguyễn Hoàng Long (Trưởng nhóm 05) & Trần Thị Thu Hà (Metrics Lead Nhóm 05).
+- **Nhóm phản biện chéo đối ứng:** `Nhóm Anh Em Siêu Nhân (Track 01)` — Repository: [trantran2929/Day26_Track01_anhemsieunhan](https://github.com/trantran2929/Day26_Track01_anhemsieunhan).
+- **Người đại diện phản biện:** Bùi Thị Ngọc Trân (Nhóm trưởng / Case Research Lead) & Ngô Lê Thủy Tiên (Metrics Lead).
 - **Ngày xác nhận:** 2026-10-14.
-- **Biên bản nghiệm thu:** 
+- **Biên bản chi tiết:** Xem toàn bộ nội dung thảo luận 2 chiều tại [evidence/bien_ban_phan_bien_cheo.md](bien_ban_phan_bien_cheo.md).
+- **Kết quả nghiệm thu:** 
   1. Nhóm bạn đồng thuận 100% với việc loại bỏ các chỉ số Activity (login, prompt count) của bản v1, công nhận tính xác thực của việc đo lường timestamp Jira cho `M03_CYCLE_TIME`.
   2. Ghi nhận đề xuất phân quyền Mollick: Nhân viên CSKH con người là người giữ quyền bấm duyệt bồi thường cuối cùng, bảo đảm kiểm soát rủi ro pháp lý.
   3. Xác nhận tính đầy đủ của bộ chỉ số v2 và bảng từ điển kỹ thuật log.

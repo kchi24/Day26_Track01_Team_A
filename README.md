@@ -9,14 +9,14 @@
 
 > *Lưu ý: Báo cáo được thực hiện theo hình thức **Cá nhân độc lập** nhưng tuân thủ nghiêm ngặt quy trình phản biện chéo 2 chiều với nhóm bạn tại Chặng 3.*
 
-| Họ và tên | MSSV | Phần phụ trách trong lab | Góp ý thực tế đã đưa cho nhóm bạn (Nhóm 05) |
+| Họ và tên | MSSV | Phần phụ trách trong lab | Góp ý thực tế đã đưa cho nhóm bạn (Nhóm Anh Em Siêu Nhân) |
 |---|---|---|---|
-| **Thân Thị Kim Chi** | 2A202602797 | **Toàn diện các module bài Lab:**<br>1. *Khóa phạm vi & Chẩn đoán:* Áp dụng Gartner-Lite, Mollick, ADKAR, xác lập 2 nguyên nhân gốc RC1–RC2 và tổng hợp chứng cứ S1–S4.<br>2. *Thiết kế Workflow & Lộ trình:* Xây dựng mô hình AS-IS/TO-BE, quy chế Human-in-command, cơ chế Fallback và Lộ trình 30–60–90 ngày có Gate định lượng.<br>3. *Dashboard & Memo:* Xây dựng Dashboard v1/v2 chuẩn 5 tầng đo lường, soạn thảo Memo quyết định và hoàn thiện tài liệu nộp. | **Phản biện Nhóm 05 (E-Commerce Customer Operations):**<br>1. *Về chỉ số:* Chỉ số "Số câu hỏi prompt vào bot" thuần túy là Activity metric, đề xuất đổi sang Workflow metric: "Thời gian xử lý khiếu nại đo từ log hệ thống Jira" và Product metric: "Tỷ lệ câu trả lời có trích dẫn nguồn kiểm chứng được đạt ≥95%".<br>2. *Về quy trình:* Quy trình TO-BE của nhóm bạn chưa có người chịu trách nhiệm pháp lý cuối cùng; cần áp dụng Mollick để chỉ định rõ nhân viên CSKH là người giữ quyền bấm duyệt bồi thường cuối, AI chỉ hỗ trợ tra cứu và trích dẫn điều khoản. |
+| **Thân Thị Kim Chi** | 2A202602797 | **Toàn diện các module bài Lab:**<br>1. *Khóa phạm vi & Chẩn đoán:* Áp dụng Gartner-Lite, Mollick, ADKAR, xác lập 2 nguyên nhân gốc RC1–RC2 và tổng hợp chứng cứ S1–S4.<br>2. *Thiết kế Workflow & Lộ trình:* Xây dựng mô hình AS-IS/TO-BE, quy chế Human-in-command, cơ chế Fallback và Lộ trình 30–60–90 ngày có Gate định lượng.<br>3. *Dashboard & Memo:* Xây dựng Dashboard v1/v2 chuẩn 5 tầng đo lường, soạn thảo Memo quyết định và hoàn thiện tài liệu nộp. | **Phản biện Nhóm Anh Em Siêu Nhân (Klarna AI CSKH):**<br>1. *Về phân tầng & Mollick:* Tỷ lệ giải quyết AI (P1) tính gộp sẽ che giấu việc bot thất bại ở ca bồi thường phức tạp; đề xuất phân tầng P1 theo 3 tầng rủi ro (Low/Med/High) và quy định ca High Risk phải định tuyến Human-first.<br>2. *Về chỉ số kiểm soát:* Đo Median W1 bỏ lọt ca nghẽn đuôi dài (long-tail lag); đề xuất bổ sung chỉ số W2 (P90 resolution time) và W3 (Handoff context completeness) để đảm bảo nhân viên nhận đủ ngữ cảnh. |
 
 ### Quy trình kiểm tra chéo nội dung:
 1. **Đối chiếu chứng cứ [S1–S4]**: Rà soát tính xác thực của số liệu từ các case study thực tế (Morgan Stanley, UK GDS, Klarna) với log thực nghiệm Jira/RAG nội bộ.
 2. **Thống nhất cấu trúc Event Logs**: Xây dựng technical dictionary và schema JSON trích xuất sự kiện cho từng bước trong TO-BE workflow.
-3. **Phản biện chéo với Nhóm 05**: Tiến hành phiên trao đổi phản biện 2 chiều; ghi nhận 2 góp ý cốt tử để nâng cấp từ Dashboard v1 lên Dashboard v2.
+3. **Phản biện chéo 2 chiều**: Trao đổi phản biện với Nhóm Anh Em Siêu Nhân ([trantran2929/Day26_Track01_anhemsieunhan](https://github.com/trantran2929/Day26_Track01_anhemsieunhan)), tiếp thu 2 thay đổi cốt lõi lên bản v2 (chi tiết tại [evidence/bien_ban_phan_bien_cheo.md](evidence/bien_ban_phan_bien_cheo.md)).
 
 ---
 
@@ -96,12 +96,12 @@ Nhóm hiện thực hóa đầy đủ **5 yếu tố của một quy trình "Đ�
 - **Tuyên bố quyết định:** **TẠM DỪNG VIỆC ROLLOUT TRÊN TOÀN CÔNG TY.** Giữ nguyên phạm vi pilot hẹp tại Đội Vận hành CSKH (30 nhân sự trọng điểm) trong vòng 60 ngày để khắc phục triệt để tầng sẵn sàng (Readiness) và hoàn thiện Kiến trúc tin cậy (Trust Architecture). Chỉ chuyển sang giai đoạn mở rộng khi vượt qua Gate 60 và Gate 90 bằng bằng chứng số liệu.
 - **Quy tắc cổng kiểm soát:** Nếu M04 < 90% hoặc M05 > 2.5% → **Dừng khẩn cấp (Hard-stop)**; nếu M03 > 20 phút → **Sửa đổi và tối ưu prompt**; nếu toàn bộ 6 chỉ số đạt target → **Tiếp tục mở rộng có kiểm soát**.
 
-### Hai thay đổi cốt lõi so với bản v1 sau kiểm tra chéo với Nhóm 05:
+### Hai thay đổi cốt lõi so với bản v1 sau kiểm tra chéo với Nhóm Anh Em Siêu Nhân:
 1. **Thay đổi 1 (Loại bỏ Activity metrics, chuyển sang Decision metrics):**
-   - *Góp ý từ Nhóm 05:* Bản v1 bị bẫy đếm số lượt login SSO (45 lượt) và số câu prompt (80 câu). Đây là chỉ số bề nổi, nhân viên login để đó không chứng minh được năng suất tăng.
+   - *Góp ý từ Nhóm Anh Em Siêu Nhân:* Bản v1 bị bẫy đếm số lượt login SSO (45 lượt) và số câu prompt (80 câu). Đây là chỉ số bề nổi, nhân viên login để đó không chứng minh được năng suất tăng.
    - *Hành động sửa đổi:* Thay thế hoàn toàn bằng `M03_CYCLE_TIME` (Jira timestamp: Baseline 42p ➔ Target ≤15p) và `M04_CITE_ACC` (QA Audit: Baseline 18.5% ➔ Target ≥95%).
 2. **Thay đổi 2 (Thay thế Đào tạo bằng Kiến trúc tin cậy & Miễn trừ trách nhiệm):**
-   - *Góp ý từ Nhóm 05:* Bản v1 đề xuất mở lớp đào tạo prompt bắt buộc là sai nguyên nhân. Nhân viên sợ dùng bot vì sợ áp dụng nhầm chính sách cũ bị trừ tiền túi.
+   - *Góp ý từ Nhóm Anh Em Siêu Nhân:* Bản v1 đề xuất mở lớp đào tạo prompt bắt buộc là sai nguyên nhân. Nhân viên sợ dùng bot vì sợ áp dụng nhầm chính sách cũ bị trừ tiền túi.
    - *Hành động sửa đổi:* Bỏ đào tạo vẹt; ép hiển thị 100% link văn bản gốc + số trang + ngày hiệu lực; bổ sung nút Báo lỗi 1-click; ban hành chính sách: *Nhân viên được miễn trừ trách nhiệm nếu đã thực hiện đúng bước đối chiếu nguồn*.
 
 ---
@@ -132,10 +132,11 @@ flowchart LR
 
 ## 8. Danh mục File Nộp
 
-- [Dashboard Hành Động v2 (Excel hoàn thiện)](file:///d:/Day26_Track01_Team_A/dashboard/dashboard_hanh_dong_v2.xlsx) — 4 tab chuyên sâu: Executive Dashboard, Theo dõi Pilot 12 tuần, Bảng đối chiếu V1 vs V2, Từ điển kỹ thuật logs.
-- [Memo Quyết Định Áp Dụng AI v2 (Markdown)](file:///d:/Day26_Track01_Team_A/memo/memo_quyet_dinh.md) — Memo chuẩn 5 phần gửi Ban Điều hành kèm sơ đồ Mermaid và phụ lục quy trình TO-BE.
-- [Dashboard Hành Động v1 (Excel gốc phút 80)](file:///d:/Day26_Track01_Team_A/v1/dashboard_hanh_dong_v1.xlsx) — Bản gốc ban đầu đối chứng trước phản biện chéo (chứng minh bẫy Activity metrics).
-- [Nguồn Bằng Chứng và Giới Hạn Diễn Giải](file:///d:/Day26_Track01_Team_A/evidence/nguon_va_gioi_han.md) — Phân loại F/B/H/D, schema sự kiện JSON và đối chiếu Baseline W0 với Pilot.
+- [Dashboard Hành Động v2 (Excel hoàn thiện)](dashboard/dashboard_hanh_dong_v2.xlsx) — 6 tab chuyên sâu: Overview, Executive Dashboard, Theo dõi Pilot 12 tuần, Bảng đối chiếu V1 vs V2, Từ điển kỹ thuật logs, Lộ trình 30-60-90.
+- [Memo Quyết Định Áp Dụng AI v2 (Markdown)](memo/memo_quyet_dinh.md) — Memo chuẩn 5 phần gửi Ban Điều hành kèm sơ đồ Mermaid và phụ lục quy trình TO-BE.
+- [Dashboard Hành Động v1 (Excel gốc phút 80)](v1/dashboard_hanh_dong_v1.xlsx) — Bản gốc ban đầu đối chứng trước phản biện chéo (chứng minh bẫy Activity metrics).
+- [Nguồn Bằng Chứng và Giới Hạn Diễn Giải](evidence/nguon_va_gioi_han.md) — Phân loại F/B/H/D, schema sự kiện JSON và đối chiếu Baseline W0 với Pilot.
+- [Biên Bản Ghi Nhận Phản Biện Chéo 2 Chiều](evidence/bien_ban_phan_bien_cheo.md) — Toàn văn nội dung phản biện 2 chiều giữa Team A và Nhóm Anh Em Siêu Nhân theo 4 trục rubric.
 
 ---
 
