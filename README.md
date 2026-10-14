@@ -10,7 +10,7 @@
 
 | Họ và tên | MSSV | Phần phụ trách trong bài | Góp ý cụ thể đã đưa cho nhóm bạn (Chặng 3) |
 | :--- | :--- | :--- | :--- |
-| **Kim Chi** (`kchi24`) | *(Điền MSSV của bạn)* | Toàn bộ các phần: Khóa phạm vi, Chẩn đoán (Gartner-Lite, Mollick, ADKAR), Thiết kế TO-BE Workflow, Lộ trình 30-60-90, Xây dựng Dashboard v1/v2, Soạn thảo Memo | **Phản biện Nhóm 05 (CSKH E-commerce):**<br>1. *Về chỉ số:* Chỉ số "Số câu hỏi prompt vào bot" thuần túy là Activity metric, đề xuất đổi sang Workflow metric: "Thời gian xử lý khiếu nại đo từ log hệ thống ticket" và "Tỷ lệ ca khiếu nại giải quyết đúng hạn không cần QA sửa lại".<br>2. *Về quy trình:* Quy trình TO-BE chưa có người chịu trách nhiệm pháp lý cuối cùng; cần áp dụng Mollick để chỉ định rõ nhân viên CSKH là người giữ quyền duyệt bồi thường, AI chỉ hỗ trợ trích dẫn chính sách. |
+| Thân Thị Kim Chi | 2A202602797 | Toàn bộ các phần: Khóa phạm vi, Chẩn đoán (Gartner-Lite, Mollick, ADKAR), Thiết kế TO-BE Workflow, Lộ trình 30-60-90, Xây dựng Dashboard v1/v2, Soạn thảo Memo | **Phản biện Nhóm 05 (CSKH E-commerce):**<br>1. *Về chỉ số:* Chỉ số "Số câu hỏi prompt vào bot" thuần túy là Activity metric, đề xuất đổi sang Workflow metric: "Thời gian xử lý khiếu nại đo từ log hệ thống ticket" và "Tỷ lệ ca khiếu nại giải quyết đúng hạn không cần QA sửa lại".<br>2. *Về quy trình:* Quy trình TO-BE chưa có người chịu trách nhiệm pháp lý cuối cùng; cần áp dụng Mollick để chỉ định rõ nhân viên CSKH là người giữ quyền duyệt bồi thường, AI chỉ hỗ trợ trích dẫn chính sách. |
 
 ---
 

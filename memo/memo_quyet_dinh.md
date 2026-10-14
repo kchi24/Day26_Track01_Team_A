@@ -1,7 +1,7 @@
 # MEMO QUYẾT ĐỊNH: ĐIỀU CHỈNH CHIẾN LƯỢC ÁP DỤNG TRỢ LÝ AI TRA CỨU TÀI LIỆU NỘI BỘ
 
 * **Kính gửi:** Ban Điều hành & Hội đồng Chuyển đổi số (Digital Transformation Steering Committee)
-* **Người thực hiện:** Kim Chi (`kchi24`) — Cá nhân thực hiện độc lập (Trưởng dự án Đổi mới Vận hành)
+* **Người thực hiện:** Thân Thị Kim Chi
 * **Mã dự án:** `Day26_Track01_Team_A` (Trợ lý AI Tra cứu Chính sách & Tài liệu Nội bộ)
 
 ---
