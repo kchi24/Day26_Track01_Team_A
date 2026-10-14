@@ -1,16 +1,16 @@
-# BÁO CÁO BÀI LAB NHÓM: GIẢI CỨU SẢN PHẨM AI BỊ KẸT
+# BÁO CÁO BÀI LAB CÁ NHÂN: GIẢI CỨU SẢN PHẨM AI BỊ KẸT
 **Mã Repo:** `Day26_Track01_Team_A`  
 **Chủ đề:** Tái thiết kế quy trình, xây dựng Kiến trúc tin cậy và Lập Dashboard hành động đo lường giá trị ứng dụng Trợ lý AI tra cứu tài liệu nội bộ
 
 ---
 
-## 1. Bảng thành viên & Đóng góp phản biện chéo
+## 1. Thông tin sinh viên & Đóng góp phản biện chéo
 
 > *Lưu ý: Báo cáo được thực hiện theo hình thức **Cá nhân độc lập**.*
 
 | Họ và tên | MSSV | Phần phụ trách trong bài | Góp ý cụ thể đã đưa cho nhóm bạn (Chặng 3) |
 | :--- | :--- | :--- | :--- |
-| **Nguyễn Văn A** *(Điền tên bạn)* | **2A20260001** *(Điền MSSV)* | Toàn bộ các phần: Khóa phạm vi, Chẩn đoán (Gartner-Lite, Mollick, ADKAR), Thiết kế TO-BE Workflow, Lộ trình 30-60-90, Xây dựng Dashboard v1/v2, Soạn thảo Memo | **Phản biện Nhóm 05 (CSKH E-commerce):**<br>1. *Về chỉ số:* Chỉ số "Số câu hỏi prompt vào bot" thuần túy là Activity metric, đề xuất đổi sang Workflow metric: "Thời gian xử lý khiếu nại đo từ log hệ thống ticket" và "Tỷ lệ ca khiếu nại giải quyết đúng hạn không cần QA sửa lại".<br>2. *Về quy trình:* Quy trình TO-BE chưa có người chịu trách nhiệm pháp lý cuối cùng; cần áp dụng Mollick để chỉ định rõ nhân viên CSKH là người giữ quyền duyệt bồi thường, AI chỉ hỗ trợ trích dẫn chính sách. |
+| **Kim Chi** (`kchi24`) | *(Điền MSSV của bạn)* | Toàn bộ các phần: Khóa phạm vi, Chẩn đoán (Gartner-Lite, Mollick, ADKAR), Thiết kế TO-BE Workflow, Lộ trình 30-60-90, Xây dựng Dashboard v1/v2, Soạn thảo Memo | **Phản biện Nhóm 05 (CSKH E-commerce):**<br>1. *Về chỉ số:* Chỉ số "Số câu hỏi prompt vào bot" thuần túy là Activity metric, đề xuất đổi sang Workflow metric: "Thời gian xử lý khiếu nại đo từ log hệ thống ticket" và "Tỷ lệ ca khiếu nại giải quyết đúng hạn không cần QA sửa lại".<br>2. *Về quy trình:* Quy trình TO-BE chưa có người chịu trách nhiệm pháp lý cuối cùng; cần áp dụng Mollick để chỉ định rõ nhân viên CSKH là người giữ quyền duyệt bồi thường, AI chỉ hỗ trợ trích dẫn chính sách. |
 
 ---
 
@@ -51,7 +51,7 @@ Quy trình được tái thiết kế từ **AS-IS** (tìm file thủ công ➔ 
 
 ## 6. Quyết định chiến lược & Bài học nâng cấp v1 ➔ v2
 
-> ### 🟡 QUYẾT ĐỊNH: SỬA (PIVOT / FIX READINESS) — CHƯA MỞ RỘNG (SCALE)
+> ### QUYẾT ĐỊNH: SỬA (PIVOT / FIX READINESS) — CHƯA MỞ RỘNG (SCALE)
 > **Lý do:** Hướng đi nghiệp vụ (Direction) đúng đắn nhưng nền tảng dữ liệu và độ tin cậy (Readiness & Trust) chưa đạt ngưỡng an toàn; tạm dừng việc triển khai toàn công ty, giữ pilot hẹp tại nhóm 30 nhân viên CSKH để sửa lỗi hệ thống và hoàn thiện quy trình kiểm chứng.
 
 ### Hai thay đổi cốt lõi so với bản v1 (Minh chứng nâng cấp sau kiểm tra chéo):

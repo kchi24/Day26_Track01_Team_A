@@ -1,8 +1,7 @@
 # MEMO QUYẾT ĐỊNH: ĐIỀU CHỈNH CHIẾN LƯỢC ÁP DỤNG TRỢ LÝ AI TRA CỨU TÀI LIỆU NỘI BỘ
 
 * **Kính gửi:** Ban Điều hành & Hội đồng Chuyển đổi số (Digital Transformation Steering Committee)
-* **Người thực hiện:** Cá nhân thực hiện độc lập (Trưởng nhóm Dự án Đổi mới Vận hành)
-* **Ngày lập:** 14/10/2026
+* **Người thực hiện:** Kim Chi (`kchi24`) — Cá nhân thực hiện độc lập (Trưởng dự án Đổi mới Vận hành)
 * **Mã dự án:** `Day26_Track01_Team_A` (Trợ lý AI Tra cứu Chính sách & Tài liệu Nội bộ)
 
 ---
@@ -57,7 +56,7 @@ Sau phiên kiểm tra chéo ở Chặng 3 với nhóm đối ứng (Nhóm 05), b
 
 ## 4. Quyết định chiến lược
 
-> ### 🟡 QUYẾT ĐỊNH: SỬA (PIVOT / FIX READINESS) — CHƯA MỞ RỘNG (SCALE)
+> ### QUYẾT ĐỊNH: SỬA (PIVOT / FIX READINESS) — CHƯA MỞ RỘNG (SCALE)
 
 * **Tuyên bố quyết định:** **TẠM DỪNG VIỆC ROLLOUT TRÊN TOÀN CÔNG TY.** Giữ nguyên phạm vi pilot hẹp tại Đội Vận hành CSKH (30 nhân sự trọng điểm) trong vòng 60 ngày để khắc phục triệt để tầng sẵn sàng (Readiness) và hoàn thiện Kiến trúc tin cậy (Trust Architecture). Chỉ chuyển sang giai đoạn mở rộng khi vượt qua Gate 60 và Gate 90 bằng bằng chứng số liệu.
 
